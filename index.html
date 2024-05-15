@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Preferred social media
+        </title>
+        <meta charset="UTF-8" content="width=display-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="border">
+                <div class="form">
+                    <h1 id="title">Preferred Social Media</h1>
+                    <p id="description">The purpose of this survey is to study the most popular social media of today.</p>
+                    <form id="survey-form" action="">
+                        <!--PERSONAL INFO-->
+                        <fieldset>
+                            <label>Personal infomation</label>
+                            <label for="name" id="name-label">Name: <input class="info" type="text" id="name" placeholder="e.g. John" required></label>
+                            <label for="email" id="email-label">Email: <input class="info" type="email" id="email" placeholder="e.g. abc@mail.com" required></label>
+                            <label for="age" id="number-label">Age (Years): <input class="info" type="number" id="number" min="13" max="120" placeholder="e.g. 18" required></label>
+                        </fieldset>
+                        <!--QUESTIONS-->
+                        <fieldset>
+                            <label>What is your go-to social media?</label>
+                            <select id="dropdown" required>
+                                <option value="">(Please select one)</option>
+                                <option value="1">Facebook</option>
+                                <option value="2">Instagram</option>
+                                <option value="3">X (formerly Twitter)</option>
+                                <option value="4">LinkedIn</option>
+                                <option value="5">Snapchat</option>
+                                <option value="6">Others</option>
+                            </select>
+                            <label>Would you recommend the social media platform to a friend or family member? (required)</label>
+                            <label for="definitely"><input type="radio" name="user-recommendation" id="definitely" value="definitely" checked>Definitely</label>
+                            <label for="maybe"><input type="radio" name="user-recommendation" id="maybe" value="maybe">Maybe</label>
+                            <label for="no"><input type="radio" name="user-recommendation" id="no" value="no">No</label>
+                        </fieldset>
+                        <!--REASONS-->
+                        <fieldset>
+                            <label>What do you like about your chosen social media platform?</label>
+                            <label for="design"><input class="inline" type="checkbox" value="design"> Design</label>
+                            <label for="navigation"><input class="inline" type="checkbox" value="navigation"> Easy to navigate</label>
+                            <label for="performance"><input class="inline" type="checkbox" value="performance"> Smooth performance</label>
+                            <label for="security"><input class="inline" type="checkbox" value="security"> Privacy and security</label>
+                            <label for="features"><input class="inline" type="checkbox" value="features"> Special features</label>
+                            <label for="supports"><input class="inline" type="checkbox" value="supports"> Supports</label>
+                            <label for="others"><input class="inline" type="checkbox" value="others"> Others</label>
+                        </fieldset>
+                        <!--COMMENTS-->
+                        <fieldset>
+                            <label>Comments</label>
+                            <textarea class="comments" placeholder="Comment here!"></textarea>
+                        </fieldset>
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
